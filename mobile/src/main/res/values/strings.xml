@@ -3,5 +3,5 @@
     <string name="button_label_inc">+</string>
     <string name="button_label_reset">0</string>
     <string name="button_label_dec">-</string>
-    <string name="message_at_min">cannot increment below minimum value</string>
+    <string name="message_at_min">cannot decrement below minimum value</string>
 </resources>
