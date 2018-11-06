@@ -3,6 +3,7 @@ package edu.luc.cs.clickcounter
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.properties.Delegates
 
@@ -24,7 +25,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onDecrement(view: View) {
-        if (counter > 0) counter -= 1
+        if (counter > 0)
+            counter -= 1
+        else
+            Toast.makeText(this, R.string.message_at_min, Toast.LENGTH_SHORT).show()
     }
 
     fun onReset(view: View) {
